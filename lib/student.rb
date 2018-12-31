@@ -38,6 +38,7 @@ class Student
   def self.create(name, grade)
     stud = self.new(name, grade)
     stud.save
+    stud
   end
 
 end
