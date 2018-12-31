@@ -36,7 +36,7 @@ class Student
   end
 
   def self.create(object)
-    stud = self.new(name, grade)
+    stud = self.new(object[:name], object[:grade])
     stud.save
     stud
   end
